@@ -8,13 +8,13 @@ function ItemList() {
         mobile: "7782515892",
         country: "canada"
     }, {
-        firstname: "keerthana",
-        lastname: "velagapudi",
-        mobile: "7569969356",
+        firstname: "test",
+        lastname: "test",
+        mobile: "1234567890",
         country: "india"
     }];
     const listItems = data.map((item) => {
-        <li>{item.firstname}</li>
+         return <li key={item.firstname}>{item.firstname}</li>
     });
     return (<div>
     <ul>
