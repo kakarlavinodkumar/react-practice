@@ -1,7 +1,13 @@
 import React, {useState} from "react";
+import { useEffect } from "react";
 
-function ItemList() {
+function ItemList(props) {
     
+    useEffect(() => {
+        console.log("useEffect hook is called!!");
+        console.log("props passed from the parent component : ", props.parent);
+    });
+
     const data = [{
         firstname: "vinod",
         lastname: "kakarla",

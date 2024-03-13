@@ -49,7 +49,7 @@ function Form() {
            
         </form>
         
-            <DisplayList/>
+            <DisplayList parent="Form"/>
             {/* </DisplayList> */}
         
     </div>);
